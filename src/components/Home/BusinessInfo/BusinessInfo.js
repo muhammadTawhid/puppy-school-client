@@ -2,7 +2,7 @@ import React from 'react';
 import InfoCard from '../InfoCard/InfoCard';
 import { faClock, faMapMarker, faPhone } from '@fortawesome/free-solid-svg-icons'
 
-const serviceData = [
+const businessData = [
     {
         title: 'Opening Hours',
         description: 'We are open 7 days',
@@ -15,7 +15,7 @@ const serviceData = [
         description: 'Brooklyn, NY 10003 USA',
         icon: faMapMarker,
         background: 'dark',
-        details: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore, repellat voluptatum reiciendis ullam perspiciatis provident'
+        details: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore, repellat voluptatum reiciendis ullam '
     },
     {
         title: 'Call us now',
@@ -26,14 +26,14 @@ const serviceData = [
     }
 ]
 
-const ServiceInfo = () => {
+const BusinessInfo = () => {
     return (
         <section className="row">
             {
-                serviceData.map(service => <InfoCard service={service}></InfoCard>)
+                businessData.map(business => <InfoCard business={business}></InfoCard>)
             }
         </section>
     );
 };
 
-export default ServiceInfo;
+export default BusinessInfo;

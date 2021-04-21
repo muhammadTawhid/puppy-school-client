@@ -1,7 +1,7 @@
 import React from 'react';
 import HeaderMain from '../HeaderMain/HeaderMain';
 import Navbar from '../Navbar/Navbar';
-import ServiceInfo from '../ServiceInfo/ServiceInfo';
+import BusinessInfo from '../BusinessInfo/BusinessInfo';
 import './Header.css'
 
 const Header = () => {
@@ -9,7 +9,7 @@ const Header = () => {
         <div className="headerStyle">
             <Navbar></Navbar>
             <HeaderMain></HeaderMain>
-            <ServiceInfo></ServiceInfo>
+            <BusinessInfo></BusinessInfo>
         </div>
     );
 };
