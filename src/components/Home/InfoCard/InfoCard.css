@@ -1,0 +1,13 @@
+.info-dark{
+    background-color: #f3381ff1;
+    border-radius: 10px;
+}
+.info-container{
+    height: 20rem;
+    width: 13rem;
+    padding: 20px;
+    text-align: center;
+}
+.info-icon{
+    font-size: 3rem;
+}
