@@ -4,7 +4,7 @@ import React from 'react';
 
 const ServiceCard = ({service}) => {
     return (
-        <div className="col-md-3 ">
+        <div className="col-md-3">
             <div className={`info-container info-${service.background}`}>
                 <div className="">
                     <h6>{service.name}</h6>
