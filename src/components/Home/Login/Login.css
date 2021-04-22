@@ -1,0 +1,15 @@
+.div-style{
+    width: 25rem;
+    border: 1px solid;
+    border-radius: 15px;
+    margin-top: 10rem;
+    margin-left: 19rem;
+    background-color: lightgray;
+}
+.btn-style{
+    width: 13rem;
+    border: 1px solid;
+    border-radius: 15px;
+    background: linear-gradient(#ff7f50, #ff6348 ,#ff4757);
+
+}
