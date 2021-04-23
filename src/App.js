@@ -10,6 +10,8 @@ import Services from "./components/Home/Services/Services";
 import Contact from "./components/Home/Contact/Contact";
 import MemberDetail from "./components/Home/MemberDetail/MemberDetail";
 import Login from "./components/Home/Login/Login";
+import Dashboard from "./components/Dashboard/Dashboard/Dashboard/Dashboard";
+import AddReview from "./components/Home/AddReview/AddReview";
 
 function App() {
   return (
@@ -20,6 +22,12 @@ function App() {
         </Route>
         <Route  path="/login">
            <Login></Login>
+        </Route>
+        <Route  path="/dashboard">
+           <Dashboard/>
+        </Route>
+        <Route  path="/addReview">
+           <AddReview></AddReview>
         </Route>
         <Route  path="/blog">
            <MemberDetail></MemberDetail>

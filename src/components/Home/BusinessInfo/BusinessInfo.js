@@ -12,10 +12,10 @@ const businessData = [
     },
     {
         title: 'Visit Our Location',
-        description: 'Brooklyn, NY 10003 USA',
+        description: 'Brooklyn, NY 1003 USA',
         icon: faMapMarker,
         background: 'dark',
-        details: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore, repellat voluptatum reiciendis ullam '
+        details: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore, repellat Tempore, repellat Tempore'
     },
     {
         title: 'Call us now',
