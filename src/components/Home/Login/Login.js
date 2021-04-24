@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import './Login.css'
 
 import 'firebase/auth'
@@ -9,8 +9,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGoogle } from '@fortawesome/free-brands-svg-icons'
 import { faPaw, } from '@fortawesome/free-solid-svg-icons'
 import Navbar from '../Navbar/Navbar';
-
-
+import { useHistory, useLocation } from 'react-router';
+import { UserContext } from '../../../App';
 
 
 
@@ -18,15 +18,23 @@ import Navbar from '../Navbar/Navbar';
 
 
 const Login = () => {
-    const [user, setUser] = useState({});
+    const history = useHistory()
+  const location = useLocation();
+  const { from } = location.state || { from: { pathname: "/" } };
+
+  const [loggedInUser, setLoggedInUser] = useContext(UserContext);
+
+    // const [user, setUser] = useState({});
     var provider = new firebase.auth.GoogleAuthProvider();
+
 
     const handleGoogleSignIn = () => {
         firebase.auth()
             .signInWithPopup(provider)
             .then((result) => {
-                var user = result.user;
-                setUser(user)
+                const loggedInUser = result.user;
+                setLoggedInUser(loggedInUser);
+                history.replace(from);
             }).catch((error) => {
                 console.log(error);
             });
@@ -40,7 +48,7 @@ const Login = () => {
                 <h2 className="fw-bold text-danger"><FontAwesomeIcon icon={faPaw} /> Puppy's <br /> School</h2>
                 <button onClick={handleGoogleSignIn} className="btn-style text-white my-3"> <FontAwesomeIcon icon={faGoogle} /> Login With Google</button>
                 <p>Don't have an account?<a href="/">create account</a></p>
-                <small >current email : {user.email}</small>
+                <small >current email : {loggedInUser.email}</small>
 
             </div>
 

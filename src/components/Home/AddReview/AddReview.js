@@ -16,7 +16,7 @@ const AddReview = () => {
             imgURL: imgURL,
 
         }
-        const url = `http://localhost:5000/addReview`;
+        const url = `https://fierce-citadel-02505.herokuapp.com/addReview`;
         console.log(imgData);
 
         fetch(url, {

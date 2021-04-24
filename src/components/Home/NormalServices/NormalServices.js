@@ -8,7 +8,7 @@ const NormalServices = () => {
     const [services, setServices] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:5000/services')
+        fetch('https://fierce-citadel-02505.herokuapp.com/services')
         .then(res => res.json())
         .then(data => setServices(data))
     },[])
@@ -19,7 +19,7 @@ const NormalServices = () => {
             <h3 className="text-danger">Our Basic Services,</h3>
             <small className="text-secondary">Here is our normal services <br/>You can add any kind of services whatever you want</small>
             </div>
-            <div className="row justify-content-center shadow">
+            <div className="row justify-content-center">
                 {
                     services.map(normal => <NormalServicesCard normalServicesData={normal}></NormalServicesCard>)
                 }

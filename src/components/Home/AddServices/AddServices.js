@@ -16,7 +16,7 @@ const AddServices = () => {
             detail: data.details,
 
         }
-        const url = `http://localhost:5000/addService`;
+        const url = `https://fierce-citadel-02505.herokuapp.com/addService`;
         console.log(serviceData);
 
         fetch(url, {
@@ -55,7 +55,7 @@ const AddServices = () => {
                             </div>
 
                             <div className="form-group text-center">
-                                <button type="submit" className="btn btn-danger">Add Review </button>
+                                <button type="submit" className="btn btn-danger">Add Service </button>
                             </div>
                         </form>
                     </div>

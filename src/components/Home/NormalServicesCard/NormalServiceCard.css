@@ -1,10 +1,6 @@
-.info-gray{
-    background-color:lightgray;
-    border-radius: 10px;
-}
-.info-red{
+.service-red{
     height: 24rem !important;
-    background-color:#f3381ff1;
+    background-color: lightgray;
     border-radius: 10px;
     
 }
@@ -15,5 +11,10 @@
     text-align: center;
 }
 .info-icon{
-    font-size: 3rem;
+    font-size: 2rem;
 }
+.card-icon :hover ::after{
+    font-size: 2rem;
+    background-color: red;
+}
+
