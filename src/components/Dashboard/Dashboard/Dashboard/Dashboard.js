@@ -14,11 +14,8 @@ const Dashboard = () => {
                 <div className="col-md-4 col-sm-6 col-12">
                     <Sidebar></Sidebar>
                 </div>
-                <div className="col-md-4 col-sm-12 col-12 d-flex justify-content-center">
-                    <h3>bjkhjkh</h3>
-                </div>
-                <div className="col-md-4 col-sm-12 col-12">
-                    <h3>ghjghjgjh</h3>
+                <div>
+                    <h1 style={{padding:"9rem"}} className="text-danger">here is your <br/> Dashboard</h1>
                 </div>
             </div>
         </section>

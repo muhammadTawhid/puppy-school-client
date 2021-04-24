@@ -16,7 +16,7 @@ const AddReview = () => {
             imgURL: imgURL,
 
         }
-        const url = `https://localhost:5000/addReview`;
+        const url = `http://localhost:5000/addReview`;
         console.log(imgData);
 
         fetch(url, {

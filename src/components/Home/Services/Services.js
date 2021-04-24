@@ -1,6 +1,7 @@
 import React from 'react';
 import { faHome } from '@fortawesome/free-solid-svg-icons'
 import ServiceCard from '../ServiceCard/ServiceCard';
+import NormalServices from '../NormalServices/NormalServices';
 
 
 const serviceData = [
@@ -47,11 +48,12 @@ const Services = () => {
                 <h5 className="text-danger">OUR SERVICES</h5>
                 <h2 className="mb-5">Service We Provide</h2>
             </div>
-            <div className="row d-flex justify-content-center my-3">
+            <div className="row  justify-content-center my-3">
             {
                 serviceData.map(service => <ServiceCard service={service}></ServiceCard>)
             }
             </div>
+            <NormalServices></NormalServices>
         </section>
     );
 };

@@ -12,6 +12,8 @@ import MemberDetail from "./components/Home/MemberDetail/MemberDetail";
 import Login from "./components/Home/Login/Login";
 import Dashboard from "./components/Dashboard/Dashboard/Dashboard/Dashboard";
 import AddReview from "./components/Home/AddReview/AddReview";
+import Reviews from "./components/Home/Reviews/Reviews";
+import AddServices from "./components/Home/AddServices/AddServices";
 
 function App() {
   return (
@@ -29,6 +31,9 @@ function App() {
         <Route  path="/addReview">
            <AddReview></AddReview>
         </Route>
+        <Route  path="/addServices">
+           <AddServices></AddServices>
+        </Route>
         <Route  path="/blog">
            <MemberDetail></MemberDetail>
         </Route>
@@ -37,6 +42,9 @@ function App() {
         </Route>
         <Route  path="/contact">
            <Contact></Contact>
+        </Route>
+        <Route  path="/reviews">
+           <Reviews></Reviews>
         </Route>
       </Switch>
     </Router>
